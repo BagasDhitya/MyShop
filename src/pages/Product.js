@@ -14,7 +14,7 @@ const Product = () => {
   async function getProduct() {
     setLoading(true);
     const res = await axios.get(GET_PRODUCT);
-    setProduct(res);
+    setProduct(res.data);
     setLoading(false);
   }
 

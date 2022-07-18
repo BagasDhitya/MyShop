@@ -164,6 +164,7 @@ const Products = () => {
                         <NavLink
                           className="stretched-link"
                           to={`/product/${product.id}`}
+                          state={{ id: product.id }}
                         >
                           <button className="btn btn-sm m-3 border-primary">
                             <i className="fa fa-arrow-right text-muted"></i>
