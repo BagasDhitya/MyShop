@@ -14,9 +14,12 @@ const Products = () => {
   async function getProducts() {
     setLoading(true);
     const res = await axios.get(GET_PRODUCTS);
-    setProducts(res);
-    setFilter(res);
-    setLoading(false);
+    if (res !== null) {
+      setProducts(res.data);
+      setFilter(res.data);
+      setLoading(false);
+      alert(res.data);
+    }
   }
 
   function filterProduct(category) {
