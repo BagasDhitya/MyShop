@@ -18,7 +18,6 @@ const Products = () => {
       setProducts(res.data);
       setFilter(res.data);
       setLoading(false);
-      alert(res.data);
     }
   }
 

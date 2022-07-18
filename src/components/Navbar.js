@@ -16,7 +16,7 @@ const Navbar = () => {
             <i className="fa fa-bars"></i>
           </button>
           <NavLink to="/">
-            <img src="/FakeShop.png" alt="logo" style={{ height: "50px" }} />
+            <img src="shop_logo.png" alt="logo" style={{ height: "50px" }} />
           </NavLink>
           <button className="navbar-toggler" type="button">
             <i className="fa fa-shopping-cart"></i>
